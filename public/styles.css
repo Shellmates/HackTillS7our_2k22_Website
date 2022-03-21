@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 3.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -554,6 +558,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .leading-10{
   line-height: 2.5rem;
 }
@@ -575,4 +589,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .previous-editions {
   font-family: "Urbanist", sans-serif;
   background: #100031;
+}
+
+@media (min-width: 768px){
+  .md\:p-14{
+    padding: 3.5rem;
+  }
+
+  .md\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
