@@ -13,8 +13,41 @@
       class="previous-editions flex flex-col items-center justify-center w-full text-white pt-5"
     >
       <h1 class="previous-title text-7xl">Previous editions</h1>
-      <img src="./assets/di 11.svg" alt="underline" />
+      <img src="./assets/di 11.svg" alt="underline" class="mb-16" />
+      <div class="previous-tabs w-3/4">
+        <div
+          class="previous-buttons flex flex-row items-center justify-center text-6xl w-full text-center"
+        >
+          <button class="previous2020 w-1/3 py-5" onclick="showPanel(0)">
+            2020
+          </button>
+          <button class="previous2018 w-1/3 py-5" onclick="showPanel(1)">
+            2018
+          </button>
+          <button class="previous2016 w-1/3 py-5" onclick="showPanel(2)">
+            2016
+          </button>
+        </div>
+        <div class="previous-paragraphs text-4xl leading-10 pb-10">
+          <div class="tab hidden p-14">
+            2020 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+          <div class="tab hidden p-14">
+            2018 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+          <div class="tab hidden p-14">
+            2016 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End of Previous editions section -->
+    <script src="../scripts/tabs.js"></script>
   </body>
 </html>
