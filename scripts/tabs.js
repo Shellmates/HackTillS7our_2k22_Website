@@ -34,4 +34,4 @@ function showPanel(panelIndex) {
   tabpanels[panelIndex].style.backgroundColor = " #0A001E";
 }
 
-showPanel(1);
+showPanel(0);

@@ -510,18 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.gap-80{
-  gap: 20rem;
-}
-
-.border-4{
-  border-width: 4px;
-}
-
-.p-14{
-  padding: 3.5rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -543,29 +531,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .leading-10{
@@ -594,6 +572,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px){
   .md\:p-14{
     padding: 3.5rem;
+  }
+
+  .md\:p-10{
+    padding: 2.5rem;
   }
 
   .md\:text-7xl{
