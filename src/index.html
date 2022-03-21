@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../public/styles.css" rel="stylesheet">
+    <link href="../public/nav.css" rel="stylesheet">
+    <link href="../public/styles.css" rel="stylesheet">
+    <link href="../public/styles.css" rel="stylesheet">
     <title>InfoSec Week Website</title>
 </head>
-<body>
-    <h1 class="text-yellow-600 lowercase underline text-7xl">Hello</h1>
+<body class=" text-white ">
+    <nav class="fixed top-0 z-30 right-0 left-0 bg-midnight p-1">
+        <button href="#" class="hamburger">
+            <div class="bar"></div>
+        </button>
+        <div class="w-screen nav-hidden md:block">
+                <ul class="nav-bar text-center m-0 p-5">
+                    <li class="py-3 md:inline"><a class="inline-block px-10" href="/">Home</a></li>
+                    <img class="py-3 md:inline" src="../assets/navstar.png">
+                    <li class="py-3 md:inline"><a class="inline-block px-10" href="/about/">About</a></li>
+                    <img class="py-3 md:inline" src="../assets/navstar.png">
+                    <li class="py-3 md:inline"><a class="inline-block px-10" href="/work/">Work</a></li>
+                    <img class="py-3 md:inline" src="../assets/navstar.png">
+                    <li class="py-3 md:inline"><a class="inline-block px-10" href="/clients/">Clients</a></li>
+                    <img class="py-3 md:inline" src="../assets/navstar.png">
+                    <li class="py-3 md:inline "><a class="inline-block px-10" href="/contact/">Contact</a></li>
+            </ul>
+            
+        </div>
 
-    <script src="/scripts/scripts.js"></script>
+        <!--Mobile navbar-->
+        <div class="mobile-nav md:nav-hidden">
+            <ul class="flex flex-col text-center">
+                <li class="p-4 list-none hover:bg-slate-500 hover:cursor-pointer"><a href="#home" class="redirect_sec leading-[100%]" >Home</a></li>
+                <img class="py-2 w-5 mx-auto" src="../assets/navstar.png">
+                <li class="p-4 list-none hover:bg-slate-500 hover:cursor-pointer"><a href="#about" class="redirect_sec">About</a></li>
+                <img class="py-2 w-5 mx-auto" src="../assets/navstar.png">
+                <li class="p-4 list-none hover:bg-slate-500 hover:cursor-pointer"><a href="#agenda" class="redirect_sec">Work</a></li>
+                <img class="py-2 w-5 mx-auto" src="../assets/navstar.png">
+                <li class="p-4 list-none hover:bg-slate-500 hover:cursor-pointer"><a href="#workshops" class="redirect_sec">Clients</a></li>
+                <img class="py-2 w-5 mx-auto" src="../assets/navstar.png">
+                <li class="p-4 list-none hover:bg-slate-500 hover:cursor-pointer"><a href="#speakers" class="redirect_sec">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <section class="bg-midnight py-60 event-venue w-full h-full bg-midnight font-urbanist">
+        <div class="w-[90%] mx-auto ">
+            <!-- Two columns -->
+            <div class=" flex mb-6 gap-x-1 p-0">
+                <div class="z-0 overflow-hidden relative pb-[56.25%] w-1/2 bg-gray-400">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.729818871565!2d3.1717269148095455!3d36.70502987996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e522f3f317461%3A0x215c157a5406653c!2sEcole%20Nationale%20Sup%C3%A9rieure%20d&#39;Informatique!5e0!3m2!1sfr!2sdz!4v1647876037850!5m2!1sfr!2sdz" class="left-0 top-0 h-[100%] w-[100%] absolute" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="w-1/2 bg-gray-500 p-4 ">
+                    <p class="font-bold text-white text-2xl">
+                        Lorem ipsum dolor.
+                    </p>
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ab ipsum! Incidunt, itaque atque.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Three columns -->
+            <div class="flex mb-4 gap-x-2">
+                <div class="w-1/3 bg-gray-400 h-12"></div>
+                <div class="w-1/3 bg-gray-500 h-12"></div>
+                <div class="w-1/3 bg-gray-400 h-12"></div>
+            </div>
+  
+        </div>
+    </section>
+
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

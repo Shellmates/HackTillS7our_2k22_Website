@@ -1,11 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.test {
-    font-size: 50px;
+/*GLOBAL VARIABLES*/
+:root {
+    --background-color: #0e1c2b;
+    --white: #ffffff;
+    --mobile-nav-color: green;
+  }
+
+.bg-midnight {
+    background-color: var(--background-color);
+  }
+
+.font-urbanist {
+    font-family: 'Urbanist', sans-serif;
 }
 
-.untest {
-    font-size: sans-serif;
-}
+
+/*FIN*/
+
+/*navbar*/
+.mobile-nav {
+    top: 0;
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    left: 100%;
+    z-index: 15;
+    padding-top: 75px;
+    display: block;
+    background-color: var(--mobile-nav-color);
+    -webkit-transition: left 0.4s linear;
+    transition: left 0.4s linear;
+  }
+ 
+  
+  .mobile-nav.is-active {
+    left: 0;
+  }
+  
+  .nav-hidden {
+      display:none;
+  }
+
+  .hamburger {
+    margin: 3% 5%;
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    height: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+  }
+  
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  
+
