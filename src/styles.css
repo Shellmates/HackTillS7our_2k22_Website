@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.test {
-    font-size: 50px;
+.previous-title {
+  font-family: "Anton", sans-serif;
 }
 
-.untest {
-    font-size: sans-serif;
+.previous-editions {
+  font-family: "Urbanist", sans-serif;
+  background: #100031;
 }

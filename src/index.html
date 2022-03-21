@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../public/styles.css" rel="stylesheet" />
     <title>InfoSec Week Website</title>
-</head>
-<body>
-    <h1 class="text-yellow-600 lowercase underline text-7xl">Hello</h1>
-
-    <script src="/scripts/scripts.js"></script>
-</body>
+  </head>
+  <body>
+    <!-- Previous editions section -->
+    <section
+      class="previous-editions flex flex-col items-center justify-center w-full text-white pt-5 text-center"
+    >
+      <h1 class="previous-title md:text-7xl text-4xl">Previous editions</h1>
+      <img src="./assets/di 11.svg" alt="underline" class="mb-16" />
+      <div class="previous-tabs w-3/4">
+        <div
+          class="previous-buttons flex flex-row items-center justify-center md:text-6xl text-2xl w-full text-center"
+        >
+          <button class="previous2020 w-1/3 py-5" onclick="showPanel(0)">
+            2020
+          </button>
+          <button class="previous2018 w-1/3 py-5" onclick="showPanel(1)">
+            2018
+          </button>
+          <button class="previous2016 w-1/3 py-5" onclick="showPanel(2)">
+            2016
+          </button>
+        </div>
+        <div class="previous-paragraphs md:text-4xl text-xl leading-10 pb-10">
+          <div class="tab hidden md:p-14 p-5">
+            2020 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+          <div class="tab hidden md:p-14 p-5">
+            2018 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+          <div class="tab hidden md:p-14 p-5">
+            2016 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
+            beatae rem velit voluptas et accusamus consequuntur. In unde
+            corporis ab itaque tenetur non doloremque autem a quasi.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Previous editions section -->
+    <script src="../scripts/tabs.js"></script>
+  </body>
 </html>
