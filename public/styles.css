@@ -543,8 +543,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.w-5{
-  width: 1.25rem;
+.w-3{
+  width: 0.75rem;
 }
 
 .w-full{
@@ -573,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .gap-x-1{
@@ -613,6 +617,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-0{
   padding: 0px;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .py-3{
@@ -688,7 +696,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   left: 100%;
   z-index: 15;
-  padding-top: 75px;
+  padding-top: 100px;
   display: block;
   background-color: var(--mobile-nav-color);
   transition: left 0.4s linear;
