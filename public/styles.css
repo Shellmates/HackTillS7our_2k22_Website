@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;500&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@500&display=swap");
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -519,12 +521,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .inline-block{
   display: inline-block;
 }
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-full{
@@ -567,16 +577,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
 }
 
+.w-24{
+  width: 6rem;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
 .list-none{
   list-style-type: none;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
   flex-direction: column;
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .gap-x-1{
@@ -603,6 +629,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -621,6 +657,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .py-3{
@@ -643,8 +683,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 15rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-\[56\.25\%\]{
   padding-bottom: 56.25%;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -656,12 +709,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
 .leading-\[100\%\]{
   line-height: 100%;
+}
+
+.leading-6{
+  line-height: 1.5rem;
 }
 
 .text-white{
@@ -669,11 +735,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 /*GLOBAL VARIABLES*/
 
 :root {
-  --background-color: #0e1c2b;
-  --white: #ffffff;
+  --background_color: #100031;
   --mobile-nav-color: green;
 }
 
@@ -754,6 +824,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/*previous editions*/
+
+.previous-title {
+  font-family: "Anton", sans-serif;
+}
+
+.previous-editions {
+  font-family: "Urbanist", sans-serif;
+  background: #100031;
+}
+
+/*end previous editions*/
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -763,7 +846,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .sm\:w-40{
+    width: 10rem;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-24{
+    margin-bottom: 6rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -771,6 +881,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:inline{
     display: inline;
   }
-}
-  
 
+  .md\:w-52{
+    width: 13rem;
+  }
+
+  .md\:p-14{
+    padding: 3.5rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:leading-10{
+    line-height: 2.5rem;
+  }
+}
