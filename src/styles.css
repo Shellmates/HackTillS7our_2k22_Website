@@ -20,10 +20,6 @@
   background-repeat: no-repeat;
 }
 
-.s1 {
-  background-image: url("./assets/contact_image.png");
-}
-
 .Line-quote-one,
 .Line-quote-two {
   position: relative;
@@ -44,6 +40,11 @@
 .svg-quote {
   z-index: 1;
   background: #100031;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
 }
 
 .Line-quote-two::before {
