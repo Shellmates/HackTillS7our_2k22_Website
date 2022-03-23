@@ -490,8 +490,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .ml-24{
@@ -502,8 +502,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 6rem;
 }
 
-.mb-14{
-  margin-bottom: 3.5rem;
+.mb-24{
+  margin-bottom: 6rem;
 }
 
 .flex{
@@ -745,6 +745,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .author-quote {
   color: #ffc947;
+}
+
+.s1 {
+  background-image: url("assets/contact_image.png");
 }
 
 .active\:cursor-grabbing:active{
