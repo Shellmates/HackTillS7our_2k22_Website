@@ -12,3 +12,14 @@
   font-family: "Urbanist", sans-serif;
   background: #100031;
 }
+
+.slide {
+  width: 60vmin;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s1 {
+  background-image: url("./assets/contact_image.png");
+}
