@@ -20,6 +20,57 @@
   background-repeat: no-repeat;
 }
 
-.s1 {
+.Line-quote-one,
+.Line-quote-two {
+  position: relative;
+}
+
+.Line-quote-one::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.svg-quote {
+  z-index: 1;
+  background: #100031;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.Line-quote-two::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.author-quote {
+  color: #ffc947;
+}
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9 {
   background-image: url("assets/contact_image.png");
+  background-size: cover;
 }

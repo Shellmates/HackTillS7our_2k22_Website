@@ -490,8 +490,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .ml-24{
@@ -500,6 +500,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-24{
   margin-right: 6rem;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
 }
 
 .flex{
@@ -516,6 +520,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .w-full{
@@ -538,22 +550,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20rem;
 }
 
+.w-20{
+  width: 5rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
 .shrink-0{
   flex-shrink: 0;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-grab{
   cursor: -webkit-grab;
   cursor: grab;
-}
-
-.snap-x{
-  -ms-scroll-snap-type: x var(--tw-scroll-snap-strictness);
-      scroll-snap-type: x var(--tw-scroll-snap-strictness);
-}
-
-.snap-center{
-  scroll-snap-align: center;
 }
 
 .flex-row{
@@ -568,12 +584,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-8{
@@ -583,6 +616,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pt-5{
@@ -597,6 +635,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -609,6 +663,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .capitalize{
@@ -645,8 +704,60 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
 }
 
-.s1 {
+.Line-quote-one,
+.Line-quote-two {
+  position: relative;
+}
+
+.Line-quote-one::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.svg-quote {
+  z-index: 1;
+  background: #100031;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.Line-quote-two::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.author-quote {
+  color: #ffc947;
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9 {
   background-image: url("assets/contact_image.png");
+  background-size: cover;
 }
 
 .active\:cursor-grabbing:active{
