@@ -498,8 +498,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2.5rem;
 }
 
+.mr-10{
+  margin-right: 2.5rem;
+}
+
 .ml-24{
   margin-left: 6rem;
+}
+
+.mr-24{
+  margin-right: 6rem;
 }
 
 .flex{
@@ -580,16 +588,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
 }
 
-.pb-32{
-  padding-bottom: 8rem;
+.pb-24{
+  padding-bottom: 6rem;
 }
 
 .pb-10{
   padding-bottom: 2.5rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
 }
 
 .text-center{
