@@ -494,14 +494,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
-}
-
-.mr-10{
-  margin-right: 2.5rem;
-}
-
 .ml-24{
   margin-left: 6rem;
 }
@@ -553,6 +545,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .cursor-grab{
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.snap-x{
+  -ms-scroll-snap-type: x var(--tw-scroll-snap-strictness);
+      scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-center{
+  scroll-snap-align: center;
 }
 
 .flex-row{
@@ -645,7 +646,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .s1 {
-  background-image: url("./assets/contact_image.png");
+  background-image: url("assets/contact_image.png");
 }
 
 .active\:cursor-grabbing:active{
