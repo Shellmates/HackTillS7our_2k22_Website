@@ -12,9 +12,18 @@
     <section
       class="previous-editions flex flex-col items-center justify-center w-full text-white pt-5 text-center"
     >
-      <h1 class="previous-title capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8">Previous editions</h1>
-      <img src="./assets/di 11.svg" alt="underline" class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24" />
-      <div class="previous-tabs w-3/4">
+      <h1
+        class="previous-title capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8"
+      >
+        Previous editions
+      </h1>
+      <img
+        src="./assets/di 11.svg"
+        alt="underline"
+        class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24"
+      />
+      <!-- Tabs part -->
+      <div class="previous-tabs w-3/4 pb-24">
         <div
           class="previous-buttons flex flex-row items-center justify-center md:text-4xl text-2xl w-full text-center"
         >
@@ -28,7 +37,9 @@
             2016
           </button>
         </div>
-        <div class="previous-paragraphs md:text-3xl md:leading-10 text-xl leading-6 pb-10">
+        <div
+          class="previous-paragraphs md:text-3xl md:leading-10 text-xl leading-6 pb-10"
+        >
           <div class="tab hidden md:p-14 p-8">
             2020 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
             beatae rem velit voluptas et accusamus consequuntur. In unde
@@ -46,8 +57,30 @@
           </div>
         </div>
       </div>
+      <!-- End of tabs part -->
+      <!-- Slides part -->
+      <section
+        class="slides-container overflow-x-hidden cursor-grab relative active:cursor-grabbing w-full mb-24 h-80"
+      >
+        <div
+          class="slides absolute h-full flex justify-center pointer-events-none"
+        >
+          <div class="slide s1 h-full relative shrink-0 w-80 ml-24"></div>
+          <div class="slide s2 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s3 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s4 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s5 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s6 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s7 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s8 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s9 h-full relative shrink-0 ml-24 w-80 mr-24"></div>
+        </div>
+      </section>
+      <img src="./assets/scroll.svg" alt="scroll" class="mb-24" />
+      <!-- End of slides part -->
     </section>
     <!-- End of Previous editions section -->
     <script src="../scripts/tabs.js"></script>
+    <script src="../scripts/slide.js"></script>
   </body>
 </html>
