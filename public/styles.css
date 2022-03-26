@@ -472,6 +472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -538,6 +542,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
+}
+
+.mr-24{
+  margin-right: 6rem;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -564,6 +584,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .w-screen{
@@ -610,6 +642,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
+.w-20{
+  width: 5rem;
+}
+
+.shrink-0{
+  flex-shrink: 0;
+}
+
 .translate-y-\[-280\%\]{
   --tw-translate-y: -280%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -618,6 +662,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .translate-y-\[-100\%\]{
   --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-grab{
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .list-none{
@@ -640,6 +694,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -652,6 +710,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -661,9 +723,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
-.bg-orange-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .bg-gray-400{
@@ -674,6 +739,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#C4C4C4\]{
   --tw-bg-opacity: 1;
   background-color: rgb(196 196 196 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-1{
@@ -735,6 +805,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 11rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-\[56\.25\%\]{
   padding-bottom: 56.25%;
 }
@@ -747,12 +822,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
 
-.pt-44{
-  padding-top: 11rem;
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -785,6 +876,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -926,7 +1022,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /*hero section start*/
 
 .hero{
-  background: url("../assets/hero_bg.png") no-repeat center;
+  background: url("./assets/hero_bg.png") no-repeat center;
   background-size: cover;
 }
 
@@ -958,6 +1054,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   background: #100031;
 }
 
+/*slider*/
+
+.slide {
+  width: 60vmin;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Line-quote-one,
+.Line-quote-two {
+  position: relative;
+}
+
+.Line-quote-one::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.svg-quote {
+  z-index: 1;
+  background: #100031;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.Line-quote-two::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.author-quote {
+  color: #ffc947;
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9 {
+  background-image: url("./assets/contact_image.png");
+  background-size: cover;
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -965,6 +1126,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-slate-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.active\:cursor-grabbing:active{
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 @media (min-width: 640px){
@@ -1108,4 +1274,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.25rem;
   }
 }
-
