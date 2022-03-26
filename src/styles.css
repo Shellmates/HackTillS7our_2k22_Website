@@ -9,12 +9,13 @@
 /*GLOBAL VARIABLES*/
 :root {
     --background_color: #100031;
-    --mobile-nav-color: green;
+    --mobile-nav-color: rgb(37, 33, 65);
   }
 
-.bg-midnight {
-    background-color: var(--background-color);
+  .font-anton {
+    font-family: "Anton", sans-serif;
   }
+
 
 .font-urbanist {
     font-family: 'Urbanist', sans-serif;
@@ -41,6 +42,10 @@
   
   .mobile-nav.is-active {
     left: 0;
+  }
+
+  .IndicateSec .nav-bar li a {
+    color: #FFC947;
   }
   
   .nav-hidden {
@@ -92,7 +97,13 @@
     .hamburger {
       display: none;
     }
+
   }
+
+
+.event-venue {
+  background-color: #100031;
+}
   
 /*previous editions*/
 
@@ -105,3 +116,38 @@
   background: #100031;
 }
 /*end previous editions*/
+
+/*hero section start*/
+
+.hero{
+  background: url("../assets/hero_bg.png") no-repeat center; 
+  background-size: cover;
+}
+
+.hero-btn::after {
+  content: 'REGISTER';
+  color:black;
+  font-size: 18px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+@media screen and (min-width:1100px) {
+  .hero{
+  background-size : 100% 100%; 
+  }
+}
+
+@media screen and (min-width:769px) {
+  .hero-btn::after {
+    font-size: 25px;
+  }
+
+}
+/*countdown*/
+.countdown {
+  background: #100031;
+}
+
