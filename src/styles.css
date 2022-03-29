@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body,footers{
+body,footer{
   font-family: "Urbanist", sans-serif;
   background: #100031;
 }
@@ -12,7 +13,220 @@ body,footers{
   font-family: "Anton", sans-serif;
 }
 
+/*GLOBAL VARIABLES*/
+:root {
+    --background_color: #100031;
+    --mobile-nav-color: rgb(37, 33, 65);
+  }
+
+  .font-anton {
+    font-family: "Anton", sans-serif;
+  }
+
+
+.font-urbanist {
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+/*FIN*/
+
+/*navbar*/
+
+.navbar-fixed-top.scrolled {
+  background-color: #0D0027 !important;
+  transition: background-color 500ms ease;
+}
+
+
+.mobile-nav {
+    top: 0;
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    left: 100%;
+    z-index: 15;
+    padding-top: 100px;
+    display: block;
+    background-color: var(--mobile-nav-color);
+    -webkit-transition: left 0.4s linear;
+    transition: left 0.4s linear;
+  }
+ 
+  
+  .mobile-nav.is-active {
+    left: 0;
+  }
+
+  .IndicateSec .nav-bar li a {
+    color: #FFC947;
+  }
+  
+  .nav-hidden {
+      display:none;
+  }
+
+  .hamburger {
+    margin: 3% 5%;
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    height: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+  }
+  
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+
+  }
+
+
+.event-venue {
+  background-color: #100031;
+}
+  
+/*previous editions*/
+
+.previous-title {
+  font-family: "Anton", sans-serif;
+}
+
 .previous-editions {
   font-family: "Urbanist", sans-serif;
   background: #100031;
 }
+/*end previous editions*/
+
+/*hero section start*/
+
+.hero{
+  background: url("./assets/hero_bg.png") no-repeat center; 
+  background-size: cover;
+}
+
+.hero-btn::after {
+  content: 'REGISTER';
+  color:black;
+  font-size: 18px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+@media screen and (min-width:1100px) {
+  .hero{
+  background-size : 100% 100%; 
+  }
+}
+
+@media screen and (min-width:769px) {
+  .hero-btn::after {
+    font-size: 25px;
+  }
+
+}
+/*countdown*/
+.countdown {
+  background: #100031;
+}
+
+/*slider*/
+
+.slide {
+  width: 60vmin;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Line-quote-one,
+.Line-quote-two {
+  position: relative;
+}
+
+.Line-quote-one::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.svg-quote {
+  z-index: 1;
+  background: #100031;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.Line-quote-two::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 3px;
+  z-index: 0;
+  background: #ffc947;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.author-quote {
+  color: #ffc947;
+}
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9 {
+  background-image: url("./assets/contact_image.png");
+  background-size: cover;
+}
+
+

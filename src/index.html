@@ -15,13 +15,170 @@
   
   <body >
  
+    <link href="../public/styles.css" rel="stylesheet">
+    <title>Hack Till S'7our Website</title>
+</head>
+<body class=" text-white ">
+    <nav class="fixed top-0 z-30 right-0 left-0 p-1 leading-loose navbar-fixed-top">
+        <button href="#" class="hamburger">
+            <div class="bar"></div>
+        </button>
+        <div class="w-screen nav-hidden md:block">
+                <ul class="nav-bar text-lg lg:text-3xl font-urbanist text-center m-0 p-5">
+                    <li class="py-5 inline"><a class="inline-block px-9 " href="#home">Home</a></li>
+                    <img class="py-5 inline w-4" src="../public/assets/star.svg">
+                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#about">About</a></li>
+                    <img class="py-5 inline w-4" src="../public/assets/star.svg">
+                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#work">Work</a></li>
+                    <img class="py-5 inline w-4" src="../public/assets/star.svg">
+                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#clients">Clients</a></li>
+                    <img class="py-5 inline w-4" src="../public/assets/star.svg">
+                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#contact">Contact</a></li>
+            </ul>
+            
+        </div>
+
+        <!--Mobile navbar-->
+        <div class="mobile-nav md:nav-hidden">
+            <ul class="flex flex-col text-center">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#home" class="redirect_sec" >Home</a></li>
+                <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#about" class="redirect_sec">About</a></li>
+                <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#work" class="redirect_sec">Work</a></li>
+                <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#clients" class="redirect_sec">Clients</a></li>
+                <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#contact" class="redirect_sec">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+
+    <button class="fixed w-12 h-12 bottom-10 right-10 bg-[#0D0027] fill-white ease-out hover:bg-white hover:fill-[#02121F] hover:ease-out px-3 py-3 rounded-full cursor-pointer z-50" onclick="topFunction()" id="myBtn" title="Go to top">
+      <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><title/><path d="M82.6074,62.1072,52.6057,26.1052a6.2028,6.2028,0,0,0-9.2114,0L13.3926,62.1072a5.999,5.999,0,1,0,9.2114,7.6879L48,39.3246,73.396,69.7951a5.999,5.999,0,1,0,9.2114-7.6879Z"/></svg>
+    </button> 
+
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <!--hero section-->
+    <a name="home"></a>
+    <section id="1" class=" sec hero w-full py-32 md:pt-52">
+      <div class=" h-[100%] w-[100%] flex flex-col align-middle justify-center text-center">
+        <h1 class="font-anton mb-4 text-4xl sm:mb-6 md:text-7xl md:mb-10">Hack Till S'Hour</h1>
+        <h2 class="text-[#FFC947] text-[18px] md:text-3xl mb-5 md:mb-14">Lorem, ipsum dolor.</h3>
+        <img src="./assets/di 11.svg" alt="underline" class="w-24 mb-4 sm:w-40 md:w-52 mx-auto" />
+        <p class=" px-[25%] md:px-[35%] md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet nesciunt beatae necessitatibus fugiat aut accusantium? Repellendus inventore quam, optio velit illum architecto eligendi reprehenderit!</p>
+        <p class="py-8 text-[#FFC947] text-[18px] md:text-2xl ">20-03-2022</p>
+        <img src="./assets/di 11.svg" alt="underline" class="w-24 mb-12 sm:w-40 md:w-52 md:mb-14 mx-auto" />
+        <button class="capitalize hero-btn relative mx-auto "><img src="../public/assets/hero-btn-shape.png" alt="" class="w-36 h-10 md:w-64 md:h-14"></button>
+      </div>
+    </section>
+
+    <!--COUNTDOWN-->
+    <div class="countdown h-full w-full">
+      <div class="mx-auto flex flex-row gap-x-16 sm:gap-x-24 align-middle justify-center"> 
+        <div class=" text-center">
+          <img src="../public/assets/lamp.png" alt="" class="mx-auto lamp w-12 sm:w-16 mb-5 md:w-24 md:mb-10">
+          <p class="daysTXT translate-y-[-280%] sm:translate-y-[-335%] md:translate-y-[-395%] font-anton md:text-3xl text-lg">00</p>
+          <p class="font-anton text-[#FFC947] translate-y-[-100%] md:text-3xl text-lg">Days</p>
+        </div>
+        <div class=" text-center">
+          <img src="../public/assets/lamp.png" alt="" class="mx-auto lamp w-12 sm:w-16 mb-5 md:w-24 md:mb-10">
+          <p class="hoursTXT translate-y-[-280%] sm:translate-y-[-335%] md:translate-y-[-395%] font-anton md:text-3xl text-lg">00</p>
+          <p class=" font-anton translate-y-[-100%] text-[#FFC947] md:text-3xl text-lg">Hours</p>
+        </div>
+        <div class=" text-center">
+          <img src="../public/assets/lamp.png" alt="" class="mx-auto lamp w-12 sm:w-16 mb-5 md:w-24 md:mb-10">
+          <p class=" minutesTXT translate-y-[-280%] sm:translate-y-[-335%] md:translate-y-[-395%] font-anton md:text-3xl text-lg">00</p>
+          <p class=" translate-y-[-100%] font-anton text-[#FFC947] md:text-3xl text-lg">Minutes</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--venue-->
+    <section id="2" class="sec py-44 event-venue w-full h-full font-urbanist">
+      <h1 class="font-anton text-center capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8">Event Venue</h1>
+        <img src="./assets/di 11.svg" alt="underline" class="mx-auto w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24" />  
+      <div class="w-[80%] mx-auto leading-loose">
+            <!-- Two columns -->
+            <div class=" flex flex-wrap md:flex-nowrap mb-6 gap-1 p-0 md:text-3xl md:leading-10 text-xl leading-6">
+                <div class="z-0 overflow-hidden relative pb-[56.25%] w-[100%] md:w-1/2 bg-gray-400">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.729818871565!2d3.1717269148095455!3d36.70502987996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e522f3f317461%3A0x215c157a5406653c!2sEcole%20Nationale%20Sup%C3%A9rieure%20d&#39;Informatique!5e0!3m2!1sfr!2sdz!4v1647876037850!5m2!1sfr!2sdz" class="left-0 top-0 h-[100%] w-[100%] absolute" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="md:w-1/2 p-6 flex flex-col items-center justify-center">
+                    <p class="pb-5 text-center font-bold text-2xl mb-4 sm:text-3xl sm:mb-6 md:text-4xl md:mb-8">
+                        Lorem ipsum dolor.
+                    </p>
+                    <p class="text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ab ipsum! Incidunt, itaque atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Three columns -->
+            <div class="flex md:flex-nowrap flex-wrap my-4 gap-2 md:text-3xl md:leading-10 text-xl leading-6">
+                <div class="p-6 w-[100%] md:w-1/3 bg-[#C4C4C4] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sit inventore minus!</div>
+                <div class="p-6 w-[100%] md:w-1/3 bg-[#C4C4C4] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem accusantium. Alias, esse at! Deserunt expedita debitis ab voluptas vero?</div>
+                <div class="p-6 w-[100%] md:w-1/3 bg-[#C4C4C4] ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus qui ipsam provident debitis repudiandae asperiores.</div>
+            </div>
+  
+        </div>
+    </section>
+
+
+        <!-- Previous editions section -->
+        <a name="about"></a>
+    
     <!-- Previous editions section -->
-    <section
-      class="previous-editions flex flex-col items-center justify-center w-full text-white pt-5 text-center"
+    <section id="3"
+      class="sec previous-editions flex flex-col items-center justify-center w-full text-white pt-5 text-center"
     >
-      <h1 class="previous-title capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8">Previous editions</h1>
-      <img src="./assets/di 11.svg" alt="underline" class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24" />
-      <div class="previous-tabs w-3/4">
+      <h1
+        class="previous-title capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8"
+      >
+        Previous editions
+      </h1>
+      <img
+        src="./assets/di 11.svg"
+        alt="underline"
+        class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24"
+      />
+      <!-- Tabs part -->
+      <div class="previous-tabs w-3/4 pb-24">
         <div
           class="previous-buttons flex flex-row items-center justify-center md:text-4xl text-2xl w-full text-center"
         >
@@ -35,7 +192,9 @@
             2016
           </button>
         </div>
-        <div class="previous-paragraphs md:text-3xl md:leading-10 text-xl leading-6 pb-10">
+        <div
+          class="previous-paragraphs md:text-3xl md:leading-10 text-xl leading-6 pb-10"
+        >
           <div class="tab hidden md:p-14 p-8">
             2020 Lorem ipsum dolor sit amet. Ea quae nihil qui repudiandae
             beatae rem velit voluptas et accusamus consequuntur. In unde
@@ -53,6 +212,185 @@
           </div>
         </div>
       </div>
+      <!-- End of tabs part -->
+      <!-- Slides part -->
+      <section
+        class="slides-container overflow-x-hidden cursor-grab relative active:cursor-grabbing w-full mb-14 h-80"
+      >
+        <div
+          class="slides absolute h-full flex justify-center pointer-events-none"
+        >
+          <div class="slide s1 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s2 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s3 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s4 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s5 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s6 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s7 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s8 h-full relative shrink-0 ml-24 w-80"></div>
+          <div class="slide s9 h-full relative shrink-0 ml-24 w-80 mr-24"></div>
+        </div>
+      </section>
+      <img src="./assets/scroll.svg" alt="scroll" class="mb-24" />
+      <!-- End of slides part -->
+      <!-- Quotes part -->
+      <div class="previous-quotes mb-24 w-full flex flex-col items-center">
+        <div class="quotes w-3/4 mb-14">
+          <div class="single-quote hidden">
+            <div class="Line-quote-one flex flex-row">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="rotate-180 w-20 h-20 svg-quote"
+              />
+            </div>
+            <div class="quote-content pt-6 px-6">
+              <p class="text-3xl text-left pb-8">
+                11Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                et reiciendis! Eveniet, qui debitis dolores quam saepe vel
+                eligendi facilis.
+              </p>
+              <p class="author-quote text-3xl text-left pb-4">
+                - Lorem ipsum -
+              </p>
+            </div>
+            <div class="Line-quote-two flex items-center justify-end">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="w-20 h-20 svg-quote"
+              />
+            </div>
+          </div>
+          <div class="single-quote hidden">
+            <div class="Line-quote-one flex flex-row">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="rotate-180 w-20 h-20 svg-quote"
+              />
+            </div>
+            <div class="quote-content pt-6 px-6">
+              <p class="text-3xl text-left pb-8">
+                22Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                et reiciendis! Eveniet, qui debitis dolores quam saepe vel
+                eligendi facilis.
+              </p>
+              <p class="author-quote text-3xl text-left pb-4">
+                - Lorem ipsum -
+              </p>
+            </div>
+            <div class="Line-quote-two flex items-center justify-end">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="w-20 h-20 svg-quote"
+              />
+            </div>
+          </div>
+          <div class="single-quote hidden">
+            <div class="Line-quote-one flex flex-row">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="rotate-180 w-20 h-20 svg-quote"
+              />
+            </div>
+            <div class="quote-content pt-6 px-6">
+              <p class="text-3xl text-left pb-8">
+                33Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                et reiciendis! Eveniet, qui debitis dolores quam saepe vel
+                eligendi facilis.
+              </p>
+              <p class="author-quote text-3xl text-left pb-4">
+                - Lorem ipsum -
+              </p>
+            </div>
+            <div class="Line-quote-two flex items-center justify-end">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="w-20 h-20 svg-quote"
+              />
+            </div>
+          </div>
+          <div class="single-quote hidden">
+            <div class="Line-quote-one flex flex-row">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="rotate-180 w-20 h-20 svg-quote"
+              />
+            </div>
+            <div class="quote-content pt-6 px-6">
+              <p class="text-3xl text-left pb-8">
+                44Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                et reiciendis! Eveniet, qui debitis dolores quam saepe vel
+                eligendi facilis.
+              </p>
+              <p class="author-quote text-3xl text-left pb-4">
+                - Lorem ipsum -
+              </p>
+            </div>
+            <div class="Line-quote-two flex items-center justify-end">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="w-20 h-20 svg-quote"
+              />
+            </div>
+          </div>
+          <div class="single-quote hidden">
+            <div class="Line-quote-one flex flex-row">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="rotate-180 w-20 h-20 svg-quote"
+              />
+            </div>
+            <div class="quote-content pt-6 px-6">
+              <p class="text-3xl text-left pb-8">
+                55Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                et reiciendis! Eveniet, qui debitis dolores quam saepe vel
+                eligendi facilis.
+              </p>
+              <p class="author-quote text-3xl text-left pb-4">
+                - Lorem ipsum -
+              </p>
+            </div>
+            <div class="Line-quote-two flex items-center justify-end">
+              <img
+                src="../public/assets/quote.svg"
+                alt="quote"
+                class="w-20 h-20 svg-quote"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="quotes-buttons flex gap-10">
+          <button
+            class="w-4 h-4 bg-white rounded-full"
+            onclick="showQuote(0)"
+          ></button>
+          <button
+            class="w-4 h-4 bg-white rounded-full"
+            onclick="showQuote(1)"
+          ></button>
+          <button
+            class="w-4 h-4 bg-white rounded-full"
+            onclick="showQuote(2)"
+          ></button>
+          <button
+            class="w-4 h-4 bg-white rounded-full"
+            onclick="showQuote(3)"
+          ></button>
+          <button
+            class="w-4 h-4 bg-white rounded-full"
+            onclick="showQuote(4)"
+          ></button>
+        </div>
+      </div>
+      <!-- End of Quotes part -->
     </section>
 
 
@@ -61,24 +399,24 @@
 
 
     <!-- COntact Us section -->
-    <section class=" w-full flex flex-col items-center justify-center lg:p-32 leading-10">
+    <section class=" w-full flex flex-col items-center justify-center lg:p-32 2xl:p-58 leading-10">
       
       <h1 class="contact-us-title relative capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl  text-[#fff] flex">Contact Us</h1>
-      <img src="../assets/underline_title.png" alt="underline" class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-8" />
+      <img src="../public/assets/underline_title.png" alt="underline" class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-8" />
       <form class="w-full flex flex-col items-center justify-between m-auto">
           <div class="w-5/6 flex items-center justify-between ">
-              <div class="lg:w-1/2 w-full lg:mt-20">
-                  <input id="name-contact" name="name-contact"  type="text" placeholder="Your Name" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2"><br/>
-                  <input id="email-contact" name="email-contact" type="text" placeholder="Your Email" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2"><br/>
-                  <input id="subject-contact" name="subject-contact" type="text" placeholder="Subject" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2">
+              <div class="lg:w-1/2 w-full lg:mt-20 2xl:self-end">
+                  <input id="name-contact" name="name-contact"  type="text" placeholder="Your Name" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2 2xl:py-10 2xl:text-xl"><br/>
+                  <input id="email-contact" name="email-contact" type="text" placeholder="Your Email" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2 2xl:py-10 2xl:text-xl"><br/>
+                  <input id="subject-contact" name="subject-contact" type="text" placeholder="Subject" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-2 2xl:py-10 2xl:text-xl">
               </div>
-              <div class="w-1/3 mr-8 hidden lg:block">
-                  <img src="../assets/contact_image.png" alt="underline" class=" w-full " />
+              <div class="w-1/3 mr-8 hidden lg:block ">
+                  <img src="../public/assets/contact_image.png" alt="underline" class=" w-full " />
               </div>
           </div>
           <div class="w-full flex flex-col items-center justify-between ">
-              <textarea name="contact-message" id="contact-message"  placeholder="Message" class="focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] px-2 w-full rounded outline-none bg-[#1e0f3d] w-5/6 my-2 h-40"></textarea><br/>
-              <input type="submit" value="Send Message" class="cursor-pointer  bg-[#F6AF1C] text-[#000] rounded-3xl px-5 font-bold">
+              <textarea name="contact-message" id="contact-message"  placeholder="Message" class=" 2xl:text-xl focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] px-2 w-full rounded outline-none bg-[#1e0f3d] w-5/6 my-2 h-40 2xl:h-48"></textarea><br/>
+              <input type="submit" value="Send Message" class="cursor-pointer  bg-[#F6AF1C] text-[#000] rounded-3xl px-5 font-bold 2xl:text-2xl 2xl:py-6 2xl:px-8">
           </div>
       </form>
    
@@ -94,16 +432,16 @@
     <footer class="mt-8 w-full lg:h-[calc(22vh)] bg-[#0A001E] border-t border-[#F6AF1C] flex lg:flex-row flex-col items-center justify-between lg:p-auto lg:px-16 py-8 ">
   
         <div class="flex flex-col  items-center justify-center lg:items-start">
-            <i class="flex items-center block  text-[#F6AF1C] mb-3"><img src="../assets//location.png" alt="" class="w-5 h-5"><span class="font-normal text-[#fff] pl-2">Esi, Oeud Smar, Algiers</span></i>
-            <i class="flex items-center  block  text-[#F6AF1C] "><img src="../assets/letter.png" alt="" class="w-5 h-5"><span class=" font-normal text-[#fff] pl-2">shellmates@esi.dz</span></i>
+            <i class="flex items-center block  text-[#F6AF1C] mb-3"><img src="../public/assets/location.png" alt="" class="w-5 h-5 2xl:h-12 2xl:w-12"><span class="font-normal text-[#fff] pl-2 2xl:text-2xl">Esi, Oeud Smar, Algiers</span></i>
+            <i class="flex items-center  block  text-[#F6AF1C] "><img src="../public/assets/letter.png" alt="" class="w-5 h-5 2xl:h-12 2xl:w-12"><span class=" font-normal text-[#fff] pl-2 2xl:text-2xl">shellmates@esi.dz</span></i>
         </div>
 
         <div class="flex flex-col items-center justify-center lg:mt-0 mt-6">
-              <h2 class="text-[#fff] mb-3">Follow us</h2>
+              <h2 class="text-[#fff] mb-3 2xl:text-2xl">Follow us</h2>
       
               <div class="flex justify-between ">
             
-                      <i class="mx-1 block rounded-3xl h-8 w-8 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
+                      <i class="mx-1 block rounded-3xl h-8 w-8 2xl:h-12 2xl:w-12 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
                         <a href="https://discord.com/invite/YJHNPGDU9E" target="_blank">
                             <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                               <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/>
@@ -111,7 +449,7 @@
                         </a>
                      </i>
       
-                      <i class="mx-1 block rounded-3xl h-8 w-8 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
+                      <i class="mx-1 block rounded-3xl h-8 w-8 2xl:h-12 2xl:w-12  bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
                         <a href="https://www.linkedin.com/company/shellmates-club/" target="_blank">
                             <svg class="w-6 h-6 text-[#fff] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
@@ -119,7 +457,7 @@
                         </a>
                       </i>
 
-                      <i class="mx-1 block rounded-3xl h-8 w-8 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
+                      <i class="mx-1 block rounded-3xl h-8 w-8 2xl:h-12 2xl:w-12  bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
                         <a href="https://www.instagram.com/shellmates/" target="_blank">
                             <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                               <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
@@ -127,7 +465,7 @@
                         </a>
                      </i>
 
-                      <i class="mx-1 block rounded-3xl h-8 w-8 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
+                      <i class="mx-1 block rounded-3xl h-8 w-8 2xl:h-12 2xl:w-12  bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
                         <a href="https://twitter.com/shellmates" target="_blank">
                             <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
@@ -135,7 +473,7 @@
                         </a>
                       </i>
 
-                      <i class="mx-1 block rounded-3xl h-8 w-8 bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
+                      <i class="mx-1 block rounded-3xl h-8 w-8 2xl:h-12 2xl:w-12  bg-[#F6AF1C] text-[#fff] flex items-center justify-center ">
                         <a href="https://web.facebook.com/shellmates" target="_blank">
                             <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
@@ -147,6 +485,10 @@
         </div>
   </footer>
     <!-- End of Previous editions section -->
+    <script src="../scripts/Countdown.js"></script>
+    <script src="../scripts/nav_venue_hero.js"></script>
+    <script src="../scripts/quotes.js"></script>
+    <script src="../scripts/slide.js"></script>
     <script src="../scripts/tabs.js"></script>
   </body>
 </html>
