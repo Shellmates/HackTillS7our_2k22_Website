@@ -500,12 +500,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.bottom-10{
+  bottom: 2.5rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
 .z-30{
   z-index: 30;
 }
 
 .z-0{
   z-index: 0;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .m-0{
@@ -558,6 +570,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
+.block{
+  display: block;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -596,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-4{
   height: 1rem;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .w-screen{
@@ -674,6 +694,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: grab;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .list-none{
   list-style-type: none;
 }
@@ -746,6 +770,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#02121F\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 18 31 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0D0027\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 0 39 / var(--tw-bg-opacity));
+}
+
+.fill-white{
+  fill: #fff;
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -808,6 +846,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-\[56\.25\%\]{
@@ -914,6 +962,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 /*GLOBAL VARIABLES*/
 
 :root {
@@ -932,6 +984,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 /*FIN*/
 
 /*navbar*/
+
+.navbar-fixed-top.scrolled {
+  background-color: #0D0027 !important;
+  transition: background-color 500ms ease;
+}
 
 .mobile-nav {
   top: 0;
@@ -1128,6 +1185,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-\[\#02121F\]:hover{
+  fill: #02121F;
+}
+
+.hover\:ease-out:hover{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .active\:cursor-grabbing:active{
   cursor: -webkit-grabbing;
   cursor: grabbing;
@@ -1274,3 +1344,5 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.25rem;
   }
 }
+
+

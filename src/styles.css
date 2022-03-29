@@ -25,6 +25,13 @@
 /*FIN*/
 
 /*navbar*/
+
+.navbar-fixed-top.scrolled {
+  background-color: #0D0027 !important;
+  transition: background-color 500ms ease;
+}
+
+
 .mobile-nav {
     top: 0;
     position: fixed;
@@ -214,3 +221,5 @@
   background-image: url("./assets/contact_image.png");
   background-size: cover;
 }
+
+
