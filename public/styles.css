@@ -562,6 +562,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
+.my-14{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -598,10 +603,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
@@ -620,6 +621,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .block{
@@ -666,8 +671,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
-.h-4{
-  height: 1rem;
+.h-2{
+  height: 0.5rem;
 }
 
 .h-7{
@@ -688,10 +693,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-2{
-  height: 0.5rem;
 }
 
 .w-screen{
@@ -746,6 +747,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 5rem;
 }
 
+.w-2{
+  width: 0.5rem;
+}
+
 .w-5\/6{
   width: 83.333333%;
 }
@@ -760,10 +765,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6{
   width: 1.5rem;
-}
-
-.w-2{
-  width: 0.5rem;
 }
 
 .max-w-screen-sm{
@@ -843,10 +844,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2{
   gap: 0.5rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-6{
@@ -1013,11 +1010,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1031,6 +1023,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-\[56\.25\%\]{
@@ -1113,15 +1120,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[calc\(28px\+1\.3vw\)\]{
-  font-size: calc(28px + 1.3vw);
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1165,6 +1163,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 201 71 / var(--tw-text-opacity));
 }
 
+.text-\[\#E3D58A\]{
+  --tw-text-opacity: 1;
+  color: rgb(227 213 138 / var(--tw-text-opacity));
+}
+
 .text-\[\#fff\]{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1178,11 +1181,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#F6AF1C\]{
   --tw-text-opacity: 1;
   color: rgb(246 175 28 / var(--tw-text-opacity));
-}
-
-.text-\[\#E3D58A\]{
-  --tw-text-opacity: 1;
-  color: rgb(227 213 138 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1468,10 +1466,6 @@ body,footer{
     margin-bottom: 4rem;
   }
 
-  .sm\:mb-2{
-    margin-bottom: 0.5rem;
-  }
-
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
@@ -1520,14 +1514,6 @@ body,footer{
 
   .md\:mb-24{
     margin-bottom: 6rem;
-  }
-
-  .md\:mb-4{
-    margin-bottom: 1rem;
-  }
-
-  .md\:mb-16{
-    margin-bottom: 4rem;
   }
 
   .md\:block{
@@ -1627,12 +1613,20 @@ body,footer{
     display: block;
   }
 
+  .lg\:h-4{
+    height: 1rem;
+  }
+
   .lg\:h-\[calc\(22vh\)\]{
     height: calc(22vh);
   }
 
-  .lg\:h-4{
-    height: 1rem;
+  .lg\:w-auto{
+    width: auto;
+  }
+
+  .lg\:w-4{
+    width: 1rem;
   }
 
   .lg\:w-full{
@@ -1641,14 +1635,6 @@ body,footer{
 
   .lg\:w-1\/2{
     width: 50%;
-  }
-
-  .lg\:w-4{
-    width: 1rem;
-  }
-
-  .lg\:w-auto{
-    width: auto;
   }
 
   .lg\:max-w-screen-xl{
@@ -1683,11 +1669,6 @@ body,footer{
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-xl{
@@ -1726,6 +1707,16 @@ body,footer{
   .\32xl\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .\32xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .\32xl\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .\32xl\:text-xl{
