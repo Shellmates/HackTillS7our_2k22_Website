@@ -230,3 +230,9 @@ body,footer{
 }
 
 
+/* Faq section */
+.answer, .question {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+}
+/* end of Faq section */
