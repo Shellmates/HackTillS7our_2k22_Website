@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body,footer{
+  font-family: "Urbanist", sans-serif;
+  background: #100031;
+}
+.previous-title ,.contact-us-title{
+  font-family: "Anton", sans-serif;
+}
 
 /*GLOBAL VARIABLES*/
 :root {
