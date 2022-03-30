@@ -508,6 +508,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 2.5rem;
 }
 
+.bottom-20{
+  bottom: 5rem;
+}
+
+.bottom-24{
+  bottom: 6rem;
+}
+
 .z-30{
   z-index: 30;
 }
@@ -1554,24 +1562,12 @@ body,footer{
     height: 3rem;
   }
 
-  .\32xl\:h-10{
-    height: 2.5rem;
-  }
-
   .\32xl\:w-12{
     width: 3rem;
   }
 
-  .\32xl\:w-10{
-    width: 2.5rem;
-  }
-
   .\32xl\:self-end{
     align-self: flex-end;
-  }
-
-  .\32xl\:p-64{
-    padding: 16rem;
   }
 
   .\32xl\:py-10{
