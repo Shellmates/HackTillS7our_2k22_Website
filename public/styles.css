@@ -567,6 +567,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -621,6 +626,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .block{
@@ -763,6 +780,66 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1\/5{
+  width: 20%;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
+}
+
+.w-\[calc\(40\%\)\]{
+  width: calc(40%);
+}
+
+.w-\[calc\(300px\)\]{
+  width: calc(300px);
+}
+
+.w-\[calc\(200px\)\]{
+  width: calc(200px);
+}
+
+.w-5\/12{
+  width: 41.666667%;
+}
+
+.w-7\/12{
+  width: 58.333333%;
+}
+
+.w-\[calc\(20vw\)\]{
+  width: calc(20vw);
+}
+
+.w-\[calc\(40vw\)\]{
+  width: calc(40vw);
+}
+
+.w-\[calc\(35vw\)\]{
+  width: calc(35vw);
+}
+
+.w-\[calc\(30vw\)\]{
+  width: calc(30vw);
+}
+
+.w-\[calc\(25vw\)\]{
+  width: calc(25vw);
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
 .max-w-screen-sm{
   max-width: 640px;
 }
@@ -814,6 +891,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -849,6 +930,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
+}
+
+.self-start{
+  align-self: flex-start;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .overflow-hidden{
@@ -1058,6 +1147,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-2{
   padding-left: 0.5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .text-left{
@@ -1496,8 +1593,20 @@ body,footer{
     display: block;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:h-14{
     height: 3.5rem;
+  }
+
+  .md\:h-\[calc\(100vh\)\]{
+    height: calc(100vh);
+  }
+
+  .md\:h-\[calc\(90vh\)\]{
+    height: calc(90vh);
   }
 
   .md\:w-52{
@@ -1520,6 +1629,18 @@ body,footer{
     width: 33.333333%;
   }
 
+  .md\:w-\[calc\(35vw\)\]{
+    width: calc(35vw);
+  }
+
+  .md\:w-\[calc\(25vw\)\]{
+    width: calc(25vw);
+  }
+
+  .md\:w-\[calc\(20vw\)\]{
+    width: calc(20vw);
+  }
+
   .md\:max-w-screen-md{
     max-width: 768px;
   }
@@ -1533,6 +1654,10 @@ body,footer{
     flex-wrap: nowrap;
   }
 
+  .md\:self-start{
+    align-self: flex-start;
+  }
+
   .md\:p-14{
     padding: 3.5rem;
   }
@@ -1544,6 +1669,18 @@ body,footer{
 
   .md\:pt-52{
     padding-top: 13rem;
+  }
+
+  .md\:pl-5{
+    padding-left: 1.25rem;
+  }
+
+  .md\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-7xl{
@@ -1577,12 +1714,29 @@ body,footer{
 }
 
 @media (min-width: 1024px){
+  .lg\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .lg\:mt-20{
     margin-top: 5rem;
   }
 
   .lg\:mt-0{
     margin-top: 0px;
+  }
+
+  .lg\:mb-auto{
+    margin-bottom: auto;
+  }
+
+  .lg\:mt-auto{
+    margin-top: auto;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
   }
 
   .lg\:block{
@@ -1613,6 +1767,14 @@ body,footer{
     width: 50%;
   }
 
+  .lg\:w-\[calc\(35vw\)\]{
+    width: calc(35vw);
+  }
+
+  .lg\:w-1\/3{
+    width: 33.333333%;
+  }
+
   .lg\:max-w-screen-xl{
     max-width: 1280px;
   }
@@ -1633,6 +1795,10 @@ body,footer{
     gap: 2.5rem;
   }
 
+  .lg\:self-start{
+    align-self: flex-start;
+  }
+
   .lg\:p-32{
     padding: 8rem;
   }
@@ -1640,6 +1806,23 @@ body,footer{
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:pl-5{
+    padding-left: 1.25rem;
+  }
+
+  .lg\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-3xl{
@@ -1650,6 +1833,11 @@ body,footer{
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
