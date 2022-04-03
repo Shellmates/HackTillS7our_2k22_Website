@@ -476,6 +476,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -600,6 +604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -642,14 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mt-32{
-  margin-top: 8rem;
-}
-
-.mt-40{
-  margin-top: 10rem;
 }
 
 .block{
@@ -1254,6 +1254,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -1736,10 +1740,6 @@ body,footer{
     height: calc(100vh);
   }
 
-  .md\:h-\[calc\(80vh\)\]{
-    height: calc(80vh);
-  }
-
   .md\:h-\[calc\(70vh\)\]{
     height: calc(70vh);
   }
@@ -1943,14 +1943,14 @@ body,footer{
     padding-right: 0px;
   }
 
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .lg\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:pl-5{
