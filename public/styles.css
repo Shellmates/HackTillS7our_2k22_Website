@@ -600,6 +600,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -628,12 +640,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mt-40{
+  margin-top: 10rem;
 }
 
 .block{
@@ -736,16 +752,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 9rem;
 }
 
-.w-3\/4{
-  width: 75%;
+.w-1\/2{
+  width: 50%;
 }
 
 .w-\[80\%\]{
   width: 80%;
 }
 
-.w-1\/2{
-  width: 50%;
+.w-3\/4{
+  width: 75%;
 }
 
 .w-1\/3{
@@ -778,10 +794,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6{
   width: 1.5rem;
-}
-
-.w-2\/4{
-  width: 50%;
 }
 
 .max-w-screen-sm{
@@ -843,6 +855,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -896,8 +912,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1.5rem;
 }
 
+.border-8{
+  border-width: 8px;
+}
+
 .border{
   border-width: 1px;
+}
+
+.border-l-2{
+  border-left-width: 2px;
 }
 
 .border-b{
@@ -906,6 +930,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-\[\#F9C953\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(249 201 83 / var(--tw-border-opacity));
+}
+
+.border-\[\#100031\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(16 0 49 / var(--tw-border-opacity));
 }
 
 .border-\[\#1e0f3d\]{
@@ -1021,6 +1055,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-44{
   padding-top: 11rem;
   padding-bottom: 11rem;
@@ -1041,18 +1080,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .pt-32{
   padding-top: 8rem;
+}
+
+.pt-0{
+  padding-top: 0px;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pb-\[56\.25\%\]{
@@ -1126,6 +1163,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1136,13 +1178,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .font-normal{
@@ -1376,38 +1421,6 @@ body,footer{
   --background-color: #100031;
 }
 
-body {
-  margin: 0;
-  background-color: var(--background-color);
-}
-
-.why_participating{
-  background-color: var(--background-color);
-}
-
-/* ------Title-------- */
-
-.above_elements {
-  justify-content: center;
-  text-align: center;
-  margin-top: 1em;
-}
-
-.above_elements img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 13rem;
-}
-
-.above_elements h1 {
-  margin: 0;
-  font-family:'Anton', sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  color: white;
-}
-
 /* ---------Why participating Cards---------- */
 
 .why_participating_elements , .speakers_elements{
@@ -1467,6 +1480,15 @@ body {
   border-radius: 7px;
 }
 
+/* @media screen and (max-width: 768px) {
+  .info_speaker {
+    text-align: center;
+    position: relative;
+    height: 25em;
+    width: 250px;
+  }
+} */
+
 .content_in_img_of_speaker{
   display: flex;
   position: absolute;
@@ -1518,6 +1540,16 @@ body {
 }
 
 /* -----  END OF Speakers=------- */
+
+/* Agenda */
+
+.agenda-eclipse {
+  position: absolute;
+  top: -1vw;
+  left: -1.5vw;
+}
+
+/* End of Agenda */
 
 /*slider*/
 
@@ -1634,6 +1666,10 @@ body {
     margin-bottom: 4rem;
   }
 
+  .sm\:mb-12{
+    margin-bottom: 3rem;
+  }
+
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
@@ -1644,10 +1680,6 @@ body {
 
   .sm\:w-16{
     width: 4rem;
-  }
-
-  .sm\:w-32{
-    width: 8rem;
   }
 
   .sm\:translate-y-\[-335\%\]{
@@ -1688,6 +1720,10 @@ body {
     margin-bottom: 6rem;
   }
 
+  .md\:mb-16{
+    margin-bottom: 4rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1698,6 +1734,14 @@ body {
 
   .md\:h-\[calc\(100vh\)\]{
     height: calc(100vh);
+  }
+
+  .md\:h-\[calc\(80vh\)\]{
+    height: calc(80vh);
+  }
+
+  .md\:h-\[calc\(70vh\)\]{
+    height: calc(70vh);
   }
 
   .md\:w-52{
@@ -1743,10 +1787,6 @@ body {
 
   .md\:self-start{
     align-self: flex-start;
-  }
-
-  .md\:self-end{
-    align-self: flex-end;
   }
 
   .md\:p-14{
@@ -1806,12 +1846,24 @@ body {
     margin-bottom: auto;
   }
 
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
   .lg\:mb-auto{
     margin-bottom: auto;
   }
 
+  .lg\:mr-28{
+    margin-right: 7rem;
+  }
+
   .lg\:mt-auto{
     margin-top: auto;
+  }
+
+  .lg\:mr-10{
+    margin-right: 2.5rem;
   }
 
   .lg\:mt-24{
@@ -1824,26 +1876,6 @@ body {
 
   .lg\:mt-0{
     margin-top: 0px;
-  }
-
-  .lg\:mr-28{
-    margin-right: 7rem;
-  }
-
-  .lg\:mr-20{
-    margin-right: 5rem;
-  }
-
-  .lg\:ml-6{
-    margin-left: 1.5rem;
-  }
-
-  .lg\:ml-20{
-    margin-left: 5rem;
-  }
-
-  .lg\:ml-10{
-    margin-left: 2.5rem;
   }
 
   .lg\:block{
@@ -1862,6 +1894,14 @@ body {
     width: 50%;
   }
 
+  .lg\:w-1\/5{
+    width: 20%;
+  }
+
+  .lg\:w-3\/4{
+    width: 75%;
+  }
+
   .lg\:w-auto{
     width: auto;
   }
@@ -1872,26 +1912,6 @@ body {
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-2\/3{
-    width: 66.666667%;
-  }
-
-  .lg\:w-1\/3{
-    width: 33.333333%;
-  }
-
-  .lg\:w-1\/4{
-    width: 25%;
-  }
-
-  .lg\:w-1\/6{
-    width: 16.666667%;
-  }
-
-  .lg\:w-1\/5{
-    width: 20%;
   }
 
   .lg\:max-w-screen-xl{
@@ -1928,33 +1948,22 @@ body {
     padding-right: 4rem;
   }
 
+  .lg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .lg\:pl-5{
     padding-left: 1.25rem;
-  }
-
-  .lg\:pr-5{
-    padding-right: 1.25rem;
-  }
-
-  .lg\:pr-10{
-    padding-right: 2.5rem;
-  }
-
-  .lg\:pr-20{
-    padding-right: 5rem;
-  }
-
-  .lg\:pr-28{
-    padding-right: 7rem;
   }
 
   .lg\:text-left{
     text-align: left;
   }
 
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-2xl{
@@ -1962,9 +1971,9 @@ body {
     line-height: 2rem;
   }
 
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

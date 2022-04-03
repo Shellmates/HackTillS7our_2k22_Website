@@ -173,35 +173,6 @@ body,footer{
     --background-color: #100031;
 }
 
-body {
-    margin: 0;
-    background-color: var(--background-color);
-}
-
-.why_participating{
-    background-color: var(--background-color);
-}
-
-/* ------Title-------- */
-.above_elements {
-  justify-content: center;
-    text-align: center;
-    margin-top: 1em;
-}
-.above_elements img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 13rem;
-}
-.above_elements h1 {
-    margin: 0;
-    font-family:'Anton', sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-    color: white;
-}
-
 
 /* ---------Why participating Cards---------- */
 
@@ -264,6 +235,15 @@ body {
     border-radius: 7px;
 }
 
+/* @media screen and (max-width: 768px) {
+  .info_speaker {
+    text-align: center;
+    position: relative;
+    height: 25em;
+    width: 250px;
+  }
+} */
+
 .content_in_img_of_speaker{
     display: flex;
     position: absolute;
@@ -318,6 +298,15 @@ body {
 
 /* -----  END OF Speakers=------- */
 
+/* Agenda */
+
+.agenda-eclipse {
+  position: absolute;
+  top: -1vw;
+  left: -1.5vw;
+}
+
+/* End of Agenda */
 
 /*slider*/
 
