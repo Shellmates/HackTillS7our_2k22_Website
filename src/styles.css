@@ -329,3 +329,47 @@ body,footer{
   font-weight: 500;
 }
 /* end of Faq section */
+
+
+body {
+  transition: 0.3s all;
+}
+
+/* Form validation */
+
+#contact-form .form #sendmessage {
+  color: #A3770D;
+  border: 1px solid #A3770D;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  width: 75%;
+}
+
+#contact-form .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #sendmessage.show,
+#contact-form .form #errormessage.show,
+#contact-form .form .show {
+  display: block;
+}
+
+#contact-form .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* End form Validation */

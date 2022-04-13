@@ -528,12 +528,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
-.m-0{
-  margin: 0px;
-}
-
 .m-auto{
   margin: auto;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .mx-auto{
@@ -588,28 +588,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mb-16{
   margin-bottom: 4rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .mb-3{
@@ -620,8 +608,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mb-14{
@@ -650,6 +654,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
 }
 
 .block{
@@ -706,6 +718,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-40{
   height: 10rem;
+}
+
+.h-48{
+  height: 12rem;
 }
 
 .h-5{
@@ -891,6 +907,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.5rem;
 }
 
+.gap-7{
+  gap: 1.75rem;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -1010,6 +1030,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1050,14 +1075,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.py-44{
-  padding-top: 11rem;
-  padding-bottom: 11rem;
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .px-6{
@@ -1075,18 +1095,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .py-28{
   padding-top: 7rem;
   padding-bottom: 7rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.pt-32{
-  padding-top: 8rem;
 }
 
 .pt-0{
@@ -1095,6 +1111,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-16{
   padding-bottom: 4rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .pb-5{
@@ -1129,6 +1149,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
+.pb-32{
+  padding-bottom: 8rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
@@ -1155,15 +1187,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1174,9 +1197,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[calc\(28px\+1\.3vw\)\]{
+  font-size: calc(28px + 1.3vw);
 }
 
 .font-bold{
@@ -1220,6 +1256,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#E3D58A\]{
+  --tw-text-opacity: 1;
+  color: rgb(227 213 138 / var(--tw-text-opacity));
+}
+
 .text-\[\#FFC947\]{
   --tw-text-opacity: 1;
   color: rgb(255 201 71 / var(--tw-text-opacity));
@@ -1230,11 +1271,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#E3D58A\]{
-  --tw-text-opacity: 1;
-  color: rgb(227 213 138 / var(--tw-text-opacity));
-}
-
 .text-\[\#000\]{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1243,6 +1279,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#F6AF1C\]{
   --tw-text-opacity: 1;
   color: rgb(246 175 28 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1588,6 +1629,49 @@ body,footer{
 
 /* end of Faq section */
 
+body {
+  transition: 0.3s all;
+}
+
+/* Form validation */
+
+#contact-form .form #sendmessage {
+  color: #A3770D;
+  border: 1px solid #A3770D;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  width: 75%;
+}
+
+#contact-form .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #sendmessage.show,
+#contact-form .form #errormessage.show,
+#contact-form .form .show {
+  display: block;
+}
+
+#contact-form .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* End form Validation */
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -1680,6 +1764,10 @@ body,footer{
     margin-bottom: 6rem;
   }
 
+  .md\:mb-16{
+    margin-bottom: 4rem;
+  }
+
   .md\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -1688,8 +1776,8 @@ body,footer{
     margin-bottom: 3.5rem;
   }
 
-  .md\:mb-16{
-    margin-bottom: 4rem;
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:block{
@@ -1706,6 +1794,10 @@ body,footer{
 
   .md\:h-\[calc\(70vh\)\]{
     height: calc(70vh);
+  }
+
+  .md\:h-full{
+    height: 100%;
   }
 
   .md\:w-52{
@@ -1743,6 +1835,10 @@ body,footer{
   .md\:translate-y-\[-395\%\]{
     --tw-translate-y: -395%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:flex-nowrap{
@@ -1799,6 +1895,11 @@ body,footer{
     line-height: 2.5rem;
   }
 
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:leading-10{
     line-height: 2.5rem;
   }
@@ -1810,12 +1911,16 @@ body,footer{
     margin-bottom: auto;
   }
 
-  .lg\:ml-10{
-    margin-left: 2.5rem;
+  .lg\:mr-10{
+    margin-right: 2.5rem;
   }
 
   .lg\:mb-auto{
     margin-bottom: auto;
+  }
+
+  .lg\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .lg\:mr-28{
@@ -1824,10 +1929,6 @@ body,footer{
 
   .lg\:mt-auto{
     margin-top: auto;
-  }
-
-  .lg\:mr-10{
-    margin-right: 2.5rem;
   }
 
   .lg\:mt-24{
@@ -1854,16 +1955,16 @@ body,footer{
     height: calc(22vh);
   }
 
-  .lg\:w-1\/2{
-    width: 50%;
-  }
-
   .lg\:w-1\/5{
     width: 20%;
   }
 
   .lg\:w-3\/4{
     width: 75%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
   }
 
   .lg\:w-auto{
