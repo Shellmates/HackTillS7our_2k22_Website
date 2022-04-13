@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* -----Speakers=------- */
+
+        .image_speaker {
+            background-image: url(/public/assets/man.jpg);
+            height: 100%;
+            width: 350px;
+            display: block;
+            background-size: cover;
+            border-radius: 7px;
+        }
+
+        /* @media screen and (max-width: 768px) {
+        .info_speaker {
+            text-align: center;
+            position: relative;
+            height: 25em;
+            width: 250px;
+        }
+        } */
+
+        .content_in_img_of_speaker{
+            display: flex;
+            position: absolute;
+            font-family: 'Urbanist', sans-serif;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s;
+            cursor: pointer;
+            
+        }
+
+        .account_icon {
+            display: inline;
+            position: relative;
+            top: 5em;
+            width: 30px;
+            bottom: 80%;
+            margin: 5px;
+            background-color: white;
+            border-radius: 2px;
+            transition: opacity;
+        }
+
+        .account_icon:hover {
+            opacity: 1;
+            background-color: rgba(67, 67, 177, 0.466);   
+            transform: scale(1.2);
+        }
+
+        .content_in_img_of_speaker h1 {
+            font-size: 2em;
+            color: white;
+        }
+
+        .content_in_img_of_speaker p {
+            line-height: 30px;
+            margin: 3em 2em;
+            font: bold;    
+        }
+
+        .content_in_img_of_speaker:hover {
+            opacity: 1;
+        }
+
+
+        /* -----  END OF Speakers=------- */
+
+    </style>
+</head>
+<body>
+
+     <!-- #####---Speakers--##### -->
+
+  <a name="speakers"></a>
+  <div  class="sec spearkers md:h-[calc(100vh)] w-full flex flex-col items-center justify-center mt-40 lg:px-32 2xl:px-58 leading-10">
+
+      <h1 class="font-anton text-center capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8">Speakers</h1>
+      <img src="./public/assets/di 11.svg" alt="underline" class="mx-auto w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-24" />  
+
+      <div class="speakers_elements why_participating_elements">
+
+          <div class="info_speaker">
+              <div class="image_speaker"></div>
+              <div class="content_in_img_of_speaker">
+                      <h1>Lorem Ipsum</h1>
+                      <p class="speaker_said" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eligendi hic quis dolor consectetur in molestiae
+                      reiciendis vero sequi quam, alias modi dolorem maiores autem 
+                      suscipit est praesentium asperiores?</p>
+                      
+                      <div class="account_speaker"> 
+                      <a href="#"><img src="/public/assets/facebook.png" alt="facebook icon" class="account_icon"></a></li>
+                      <a href="#"><img src="/public/assets/linkedin.png" alt="linkedin icon" class="account_icon"></a></li>
+                      </div>
+              </div>
+          </div>
+
+          <div class="info_speaker">
+              <div class="image_speaker"></div>
+              <div class="content_in_img_of_speaker">
+                      <h1>Lorem Ipsum</h1>
+                      <p class="speaker_said" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eligendi hic quis dolor consectetur in molestiae
+                      reiciendis vero sequi quam, alias modi dolorem maiores autem 
+                      suscipit est praesentium asperiores?</p>
+                      
+                      <div class="account_speaker"> 
+                      <a href="#"><img src="/public/assets/facebook.png" alt="facebook icon" class="account_icon"></a></li>
+                      <a href="#"><img src="/public/assets/linkedin.png" alt="linkedin icon" class="account_icon"></a></li>
+                      </div>
+              </div>
+          </div>
+
+          <div class="info_speaker">
+              <div class="image_speaker"></div>
+              <div class="content_in_img_of_speaker">
+                      <h1>Lorem Ipsum</h1>
+                      <p class="speaker_said" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eligendi hic quis dolor consectetur in molestiae
+                      reiciendis vero sequi quam, alias modi dolorem maiores autem 
+                      suscipit est praesentium asperiores?</p>
+                      
+                      <div class="account_speaker"> 
+                      <a href="#"><img src="/public/assets/facebook.png" alt="facebook icon" class="account_icon"></a></li>
+                      <a href="#"><img src="/public/assets/linkedin.png" alt="linkedin icon" class="account_icon"></a></li>
+                      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- #####--- END  OF  Speakers--##### -->
+
+  <!-- #####---Agenda--##### -->
+
+  <a name="agenda"></a>
+  <div id="3" class="sec spearkers sec md:h-[calc(100vh)]  w-full flex flex-col items-center justify-center mt-40 lg:px-32 2xl:px-58 leading-10">
+
+    <h1 class="font-anton text-center capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl md:mb-8">Agenda</h1>
+    <img src="./public/assets/di 11.svg" alt="underline" class="mx-auto w-24 mb-8 sm:w-40 sm:mb-12 md:w-52 md:mb-16" /> 
+
+    <div class="w-full flex flex-row  items-start justify-between m-auto lg:text-xl  text-lg">
+      <div class=" lg:w-1/5 flex flex-col items-start lg:mr-10">
+        <p class=" md:self-start text-center lg:text-left mb-5">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class=" lg:w-3/4 w-full border-l-2 border-[#F9C953] px-12 pt-0 pb-16 mb-16 lg:mb-auto text-center lg:text-left relative">
+        <img src="../public/assets/Ellipse 10.svg" alt="Round" class="agenda-eclipse border-8 rounded-full border-[#100031]">
+        <h1 class="text-3xl font-bold font-urbanist text-white mb-3">Title of Activity</h1>
+        <p class="text-xl font-medium font-urbanist text-[#E3D58A]  mb-2">Name of Speaker</p>
+        <p class="text-lg font-light font-urbanist text-white lg:text-left mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam quia ut magnam consectetur itaque, quod enim tenetur atque distinctio laudantium! Ea fuga ducimus ipsa..</p>
+      </div>
+     
+    </div>
+    <div class="w-full flex flex-row  items-start justify-between m-auto lg:text-xl  text-lg">
+      <div class=" lg:w-1/5 flex flex-col items-start lg:mr-10">
+        <p class=" md:self-start text-center lg:text-left mb-5">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class=" lg:w-3/4 w-full border-l-2 border-[#F9C953] px-12 pt-0 pb-16 mb-16 lg:mb-auto text-center lg:text-left relative">
+        <img src="../public/assets/Ellipse 10.svg" alt="Round" class="agenda-eclipse border-8 rounded-full border-[#100031]">
+        <h1 class="text-3xl font-bold font-urbanist text-white mb-3">Title of Activity</h1>
+        <p class="text-xl font-medium font-urbanist text-[#E3D58A]  mb-2">Name of Speaker</p>
+        <p class="text-lg font-light font-urbanist text-white lg:text-left mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam quia ut magnam consectetur itaque, quod enim tenetur atque distinctio laudantium! Ea fuga ducimus ipsa..</p>
+      </div>
+     
+    </div>
+    <div class="w-full flex flex-row  items-start justify-between m-auto lg:text-xl  text-lg">
+      <div class=" lg:w-1/5 flex flex-col items-start lg:mr-10">
+        <p class=" md:self-start text-center lg:text-left mb-5">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class=" lg:w-3/4 w-full border-l-2 border-[#F9C953] px-12 pt-0 pb-16 mb-16 lg:mb-auto text-center lg:text-left relative">
+        <img src="../public/assets/Ellipse 10.svg" alt="Round" class="agenda-eclipse border-8 rounded-full border-[#100031]">
+        <h1 class="text-3xl font-bold font-urbanist text-white mb-3">Title of Activity</h1>
+        <p class="text-xl font-medium font-urbanist text-[#E3D58A]  mb-2">Name of Speaker</p>
+        <p class="text-lg font-light font-urbanist text-white lg:text-left mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam quia ut magnam consectetur itaque, quod enim tenetur atque distinctio laudantium! Ea fuga ducimus ipsa..</p>
+      </div>
+     
+    </div>
+
+  </div>
+
+<!-- #####--- END  OF  Agenda--##### -->
+
+
+    
+</body>
+</html>
