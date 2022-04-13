@@ -148,7 +148,7 @@ body,footer{
 /*hero section start*/
 
 .hero{
-  background: url("./assets/hero_bg.png") no-repeat center; 
+  background: url("./assets/hero_bg.jpg") no-repeat center; 
   background-size: cover;
 }
 
