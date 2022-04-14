@@ -711,6 +711,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.h-\[80vw\]{
+  height: 80vw;
+}
+
 .h-40{
   height: 10rem;
 }
@@ -725,18 +729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
-.h-\[50vw\]{
-  height: 50vw;
-}
-
-.h-\[80vw\]{
-  height: 80vw;
 }
 
 .w-24{
@@ -876,10 +868,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.flex-nowrap{
-  flex-wrap: nowrap;
 }
 
 .items-start{
@@ -1745,10 +1733,6 @@ body {
 }
 
 @media (min-width: 768px){
-  .md\:relative{
-    position: relative;
-  }
-
   .md\:my-4{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1786,12 +1770,12 @@ body {
     height: 3.5rem;
   }
 
-  .md\:h-\[calc\(70vh\)\]{
-    height: calc(70vh);
-  }
-
   .md\:h-auto{
     height: auto;
+  }
+
+  .md\:h-\[calc\(70vh\)\]{
+    height: calc(70vh);
   }
 
   .md\:w-52{
@@ -1835,20 +1819,12 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
   .md\:flex-nowrap{
     flex-wrap: nowrap;
   }
 
   .md\:gap-28{
     gap: 7rem;
-  }
-
-  .md\:gap-1{
-    gap: 0.25rem;
   }
 
   .md\:self-start{
