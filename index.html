@@ -56,8 +56,8 @@
                     <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#sponsors">Sponsors</a></li>
                     <!-- <img class="py-5 inline w-4" src="../public/assets/star.svg">
                     <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#editions">Editions</a></li> -->
-                    <!-- <img class="py-5 inline w-4" src="../public/assets/star.svg">
-                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#contact">Contact Us</a></li> -->
+                    <img class="py-5 inline w-4" src="../public/assets/star.svg">
+                    <li class="py-5 inline w-4"><a class="inline-block px-9 " href="#contact">Contact Us</a></li>
             </ul>
             
         </div>
@@ -76,8 +76,8 @@
                 <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#sponsors" class="redirect_sec">Sponsors</a></li>
                 <!-- <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
                 <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#editions" class="redirect_sec">Editions</a></li> -->
-                <!-- <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
-                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#contact" class="redirect_sec">Contact Us</a></li> -->
+                <img class="py-2 w-3 mx-auto" src="../public/assets/star.svg">
+                <li class="p-4 list-none hover:bg-slate-600 hover:cursor-pointer"><a href="#contact" class="redirect_sec">Contact Us</a></li>
             </ul>
         </div> 
     </nav>
@@ -334,9 +334,85 @@
 
     <!-- COntact Us section -->
 
-
-    <!-- End of COntact Us section -->
-
+    <a name="contact"></a>
+    <section id="5" class="sec w-5/6 md:w-full mx-auto">
+      <div id="contact-form" id="6" class="sec w-full flex flex-col items-center justify-center pt-32 lg:p-32 2xl:p-58 leading-10">
+        <h1 class="contact-us-title relative capitalize text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-5xl  text-[#fff] flex">Contact Us</h1>
+        <img src="../public/assets/underline_title.png" alt="underline" class="w-24 mb-10 sm:w-40 sm:mb-16 md:w-52 md:mb-8" />
+        <div class="form w-full flex flex-col items-center">
+          
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage">An Error happened while trying to send your message :(</div>
+            <form
+              action="https://script.google.com/macros/s/AKfycbzDV8l9lJveAr75SpaEKgOw1SuNUnuU8U_HF8SiwFybfUjqFT_9HhaVyuOIAbrwouHF6w/exec"
+              method="post" role="form"
+              class=" gform contactForm w-full flex flex-col items-center justify-between m-auto text-white md:text-xl text-lg"
+            >
+            <div class="w-full flex items-center justify-between ">
+              <div class="lg:w-1/2 w-full lg:mt-20 2xl:self-end">
+                    <div class="form-group w-full h-full ">
+                      <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Your name"
+                        class="form-control name-form focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-6 2xl:py-10 2xl:text-xlpl-5"
+                        data-rule="minlen:4"
+                        data-msg="Please enter at least 4 chars" 
+                      />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group w-full h-full ">
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        class="form-control email-form focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-6 2xl:py-10 2xl:text-xl pl-5"
+                        data-rule="email" 
+                        data-msg="Please enter a valid email"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  <div class="form-group w-full h-full">
+                    <input
+                      id="subject"
+                      type="text"
+                      name="subject"
+                      class="form-control subject-form pl-5 focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] rounded outline-none bg-[#1e0f3d] w-full my-3 h-12 px-6 2xl:py-10 2xl:text-xl"
+                      data-rule="minlen:4" 
+                      data-msg="Please enter at least 8 chars of subject"
+                      placeholder="Subject"
+                    />
+                    <div class="validation"></div>
+                  </div>
+              </div>
+              <div class="w-1/3 mr-8 hidden lg:block ">
+                <img src="../public/assets/contact_image.png" alt="underline" class=" w-full " />
+              </div>
+            </div>
+              <div class="form-group w-full mb-6">
+                <textarea
+                  name="message"
+                  class="form-control message-form pl-5 pt-2 2xl:text-xl focus:border-[#F6AF1C] border border-[#1e0f3d] text-[#fff] px-6 py-4 2xl:py-6 rounded outline-none bg-[#1e0f3d] w-full h-40 2xl:h-48 my-2"
+                  data-rule="required" 
+                  data-msg="Please write something for us"
+                  placeholder="Message"
+                ></textarea>
+                <div class="validation"></div>
+              </div>
+              <button type="submit" class="submit-form px-10 py-3 rounded-full g-recaptcha cursor-pointer  bg-[#F6AF1C] text-[#000] font-bold text-md 2xl:text-2xl 2xl:py-4 2xl:px-10 mt-6 mb-20 md:my-4"
+              data-callback='onSubmit' 
+              data-action="submit" 
+              data-sitekey="6Ld2r3AfAAAAAFhnfn_gjttQlVLpKPD24xb8FXwB">
+                Send Message
+              </button>
+            </form>
+        </div>
+      </div>
+      
+    </section>
+   <!-- End of COntact Us section -->
 
 
 
@@ -400,15 +476,18 @@
         </div>
   </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- End of Previous editions section -->
-    <script src="../scripts/contactform.js"></script>
-    <script src="../scripts/Countdown.js"></script>
-    <script src="../scripts/nav_venue_hero.js"></script>
-    <script src="../scripts/quotes.js"></script>
-    <script src="../scripts/slide.js"></script>
-    <script src="../scripts/tabs.js"></script>
-    <script src="venobox/dist/venobox.min.js"></script>
+    <script src="/scripts/contactform.js"></script>
+    <script src="/scripts/Countdown.js"></script>
+    <script src="/scripts/nav_venue_hero.js"></script>
+    <script src="/scripts/quotes.js"></script>
+    <script src="/scripts/slide.js"></script>
+    <script src="/scripts/tabs.js"></script>
+    <script src="/venobox/dist/venobox.min.js"></script>
   </body>
 </html>

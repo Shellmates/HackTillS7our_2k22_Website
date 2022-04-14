@@ -32,7 +32,6 @@ const sections=document.querySelectorAll('.sec');
       entries.forEach((entry) => {
         
         if (entry.isIntersecting) {
-          console.log(entry.target.id);
           navSecNames[entry.target.id-1].style.color="#FFC947";
         }else {
           navSecNames[entry.target.id-1].style.color="white";

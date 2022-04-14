@@ -338,14 +338,14 @@ body {
 /* Form validation */
 
 #contact-form .form #sendmessage {
-  color: #A3770D;
-  border: 1px solid #A3770D;
+  color: #F6AF1C;
+  border: 1px solid #F6AF1C;
   display: none;
   text-align: center;
   padding: 15px;
   font-weight: 600;
   margin-bottom: 35px;
-  width: 75%;
+  width: 100%;
 }
 
 #contact-form .form #errormessage {
