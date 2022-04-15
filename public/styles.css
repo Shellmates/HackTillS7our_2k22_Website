@@ -1263,6 +1263,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(246 175 28 / var(--tw-text-opacity));
 }
 
+.text-\[\#310294\]{
+  --tw-text-opacity: 1;
+  color: rgb(49 2 148 / var(--tw-text-opacity));
+}
+
+.text-\[\#4106BE\]{
+  --tw-text-opacity: 1;
+  color: rgb(65 6 190 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1665,6 +1675,11 @@ body {
 
 .hover\:fill-\[\#02121F\]:hover{
   fill: #02121F;
+}
+
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .hover\:ease-out:hover{
