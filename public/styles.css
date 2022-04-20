@@ -541,14 +541,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .my-4{
@@ -559,6 +554,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-2{
@@ -603,22 +608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mb-14{
   margin-bottom: 3.5rem;
 }
@@ -643,8 +632,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-20{
   margin-top: 5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .mr-8{
@@ -679,16 +684,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-7{
-  height: 1.75rem;
-}
-
 .h-80{
   height: 20rem;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .h-20{
@@ -713,6 +714,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[80vw\]{
   height: 80vw;
+}
+
+.h-7{
+  height: 1.75rem;
 }
 
 .h-40{
@@ -787,6 +792,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.w-1\/6{
+  width: 16.666667%;
+}
+
 .w-\[80\%\]{
   width: 80%;
 }
@@ -834,13 +843,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-pointer{
-  cursor: pointer;
-}
-
 .cursor-grab{
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .select-none{
@@ -1005,12 +1014,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #fff;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .p-8{
   padding: 2rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-5{
@@ -1028,11 +1037,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-5{
@@ -1085,6 +1089,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1101,14 +1110,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-16{
   padding-bottom: 4rem;
-}
-
-.pt-32{
-  padding-top: 8rem;
-}
-
-.pr-6{
-  padding-right: 1.5rem;
 }
 
 .pt-5{
@@ -1135,8 +1136,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.pt-32{
+  padding-top: 8rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
 }
 
 .pl-5{
@@ -1157,6 +1166,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .align-middle{
@@ -1183,11 +1196,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1195,6 +1203,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[18px\]{
   font-size: 18px;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -1221,16 +1234,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.leading-snug{
-  line-height: 1.375;
-}
-
 .leading-6{
   line-height: 1.5rem;
 }
 
 .leading-loose{
   line-height: 2;
+}
+
+.leading-snug{
+  line-height: 1.375;
 }
 
 .text-white{
@@ -1261,16 +1274,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#F6AF1C\]{
   --tw-text-opacity: 1;
   color: rgb(246 175 28 / var(--tw-text-opacity));
-}
-
-.text-\[\#310294\]{
-  --tw-text-opacity: 1;
-  color: rgb(49 2 148 / var(--tw-text-opacity));
-}
-
-.text-\[\#4106BE\]{
-  --tw-text-opacity: 1;
-  color: rgb(65 6 190 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1395,7 +1398,7 @@ body,footer{
   transform: rotate(45deg) translate(-9px, -8px);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hamburger {
     display: none;
   }
@@ -1524,11 +1527,18 @@ body,footer{
 
 /* Agenda */
 
-@media (min-width:1200px) {
+.agenda-eclipse {
+  position: absolute;
+  top: -2.5%;
+  left: -6%;
+  width: 40px;
+}
+
+@media (min-width:600px) {
   .agenda-eclipse {
     position: absolute;
-    top: -0.5%;
-    left: -2.5%;
+    top: -2%;
+    left: -4.5%;
   }
 }
 
@@ -1536,7 +1546,23 @@ body,footer{
   .agenda-eclipse {
     position: absolute;
     top: -0.5%;
-    left: -1.5%;
+    left: -4%;
+  }
+}
+
+@media (min-width:1200px) {
+  .agenda-eclipse {
+    position: absolute;
+    top: -1.5%;
+    left: -3%;
+  }
+}
+
+@media (min-width:1250px) {
+  .agenda-eclipse {
+    position: absolute;
+    top: -1.5%;
+    left: -2.5%;
   }
 }
 
@@ -1709,6 +1735,10 @@ body {
     margin-bottom: 3rem;
   }
 
+  .sm\:mt-60{
+    margin-top: 15rem;
+  }
+
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
@@ -1765,16 +1795,12 @@ body {
     margin-bottom: 4rem;
   }
 
-  .md\:mb-14{
-    margin-bottom: 3.5rem;
-  }
-
   .md\:mb-10{
     margin-bottom: 2.5rem;
   }
 
-  .md\:block{
-    display: block;
+  .md\:mb-14{
+    margin-bottom: 3.5rem;
   }
 
   .md\:h-\[calc\(100vh\)\]{
@@ -1855,6 +1881,11 @@ body {
     padding-right: 35%;
   }
 
+  .md\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1933,6 +1964,10 @@ body {
     margin-top: auto;
   }
 
+  .lg\:mt-40{
+    margin-top: 10rem;
+  }
+
   .lg\:mt-24{
     margin-top: 6rem;
   }
@@ -1965,10 +2000,6 @@ body {
     width: 75%;
   }
 
-  .lg\:w-full{
-    width: 100%;
-  }
-
   .lg\:w-auto{
     width: auto;
   }
@@ -1979,6 +2010,10 @@ body {
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:max-w-screen-xl{
