@@ -239,11 +239,16 @@ body,footer{
 
 /* Agenda */
 
+@media (max-width:500px) {
+  .agenda-eclipse {
+    width: 40px;
+  }
+}
+
   .agenda-eclipse {
     position: absolute;
     top: -2.5%;
     left: -6%;
-    width: 40px;
   }
 
 @media (min-width:600px) {
